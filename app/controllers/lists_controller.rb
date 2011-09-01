@@ -41,10 +41,9 @@ class ListsController < ApplicationController
   # POST /lists.xml
   def create
     @list = List.new(params[:list])
-
     respond_to do |format|
       if @list.save
-        format.html { redirect_to(@list, :notice => 'Task was successfully added.') }
+        format.html { redirect_to(@list, :notice => 'Task was successfully created.') }
         format.xml  { render :xml => @list, :status => :created, :location => @list }
       else
         format.html { render :action => "new" }

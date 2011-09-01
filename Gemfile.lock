@@ -29,6 +29,7 @@ GEM
       activesupport (= 3.0.3)
     activesupport (3.0.3)
     arel (2.0.10)
+    bcrypt-ruby (3.0.0-x86-mingw32)
     builder (2.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -70,5 +71,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt-ruby
   mysql2 (= 0.2.6)
   rails (= 3.0.3)

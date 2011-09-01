@@ -1,85 +1,119 @@
 body { background-color: #fff; color: #333; }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
-  background: #FFFFE1;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size:   13px;
+	line-height: 18px;
+	background: #FFFFE1;
+}
+#login_menu{
+}
+#login_menu a{
+ height:30px;
+ padding-top:5px;
+ padding-bottom:5px; 
+ padding-right:20px;
+ padding-left:20px;
+ display: block;
+ width:auto;
 }
 
+#login_menu a:hover{
+  background-color:#FFCC99;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background:white;
+	height: 30px;
+	border-left-style: solid;
+	border-right-style: solid;
+	overflow:hidden;
+}
+li{ 
+ 
+ float: right;
+ width:auto;
+ border-left-style: solid;
+ height:30px;
+}
 h1 {
-  background-color: #6495ed;
-  border-width:5px;
-  border-bottom-style:groove;
-  padding: 15px;
+	background-color: #6495ed;
+	border-width:5px;
+	border-bottom-style:groove;
+	padding: 10px;
+	margin: 0px;
 }
 td {
-  padding: 20px;
+	padding: 5px;
 }
 th {
-  border-style: solid;
-  border-width: 2px;
-  margin: 10px;
-  background-color: #FFFFCC;
+	border-style: solid;
+	border-width: 2px;
+	margin: 10px;
+	background-color: #FFFFCC;
 }
 tr{
-  padding: 10px;
+	padding: 4px;
 }
 pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
+	background-color: #eee;
+	padding: 10px;
+	font-size: 11px;
 }
 
 a { 
-  color: #000;
+	color: #000;
+	padding-right: 4px;
+	padding-left: 4px;
  }
-a:visited { color: #000; }
-a:hover { 
-  font-size: 18px;
-  color: #666666; 
-  border-style: solid; 
-  border-width:2px;
-  padding-right: 4px;
-  padding-left: 4px;
-  clear: both;
+a:visited { 
+  color: #000;
 }
-
+a:hover { 
+	color: #white;  
+	
+}
+#wrapper{
+  color:white;
+}
 div.field, div.actions {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 #notice {
-  color: green;
+	color: green;
 }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+	padding: 2px;
+	background-color: red;
+	display: table;
 }
 
 #error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
+	width: 450px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
 }
 
 #error_explanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  margin-bottom: 0px;
-  background-color: #c00;
-  color: #fff;
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin: -7px;
+	margin-bottom: 0px;
+	background-color: #c00;
+	color: #fff;
 }
 
 #error_explanation ul li {
-  font-size: 12px;
-  list-style: square;
+	font-size: 12px;
+	list-style: square;
 }

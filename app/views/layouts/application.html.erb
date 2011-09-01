@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <h1>To Do List</h1>
+<div id="login_menu">
+<div id="user_nav">
+  <% if current_user %>
+  <ul>
+   <li> <%= link_to "Log out", log_out_path %></li>
+    <p style=" float:right; background-color:white;">Logged in as <%= current_user.email %>.</p>
+  </ul>
+
+  <% else %>
+  <ul>
+   <li><%= link_to "Register", sign_up_path %></li>
+   <li><%= link_to "log in", log_in_path %></li>
+  </ul>
+  <% end %>
+</div>
+</div>
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
 <head>
   <title>Todolist</title>
   <%= stylesheet_link_tag :all %>

@@ -5,6 +5,7 @@ class CreateLists < ActiveRecord::Migration
       t.text :Comments
       t.datetime :Date_added
       t.datetime :Finish_by
+      t.integer :user_id
       t.timestamps
     end
   end

@@ -27,5 +27,6 @@
     <%= f.label :Finish_by %><br />
     <%= f.datetime_select :Finish_by %>
   </div>
+<%  f.hidden_field(:user_id, :field, :value => current_user.id) %>
 <input type="submit" value="Create Task" />
 <% end %>

@@ -1,0 +1,12 @@
+development:
+    adapter: mysql2
+    encoding: utf8
+    database: todolist_development
+    username: root
+    password: root
+test:
+    adapter: mysql2
+    encoding: utf8
+    database: todolist_test
+    username: root
+    password: root

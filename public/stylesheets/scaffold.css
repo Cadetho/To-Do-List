@@ -1,0 +1,85 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+  background: #FFFFE1;
+}
+
+h1 {
+  background-color: #6495ed;
+  border-width:5px;
+  border-bottom-style:groove;
+  padding: 15px;
+}
+td {
+  padding: 20px;
+}
+th {
+  border-style: solid;
+  border-width: 2px;
+  margin: 10px;
+  background-color: #FFFFCC;
+}
+tr{
+  padding: 10px;
+}
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { 
+  color: #000;
+ }
+a:visited { color: #000; }
+a:hover { 
+  font-size: 18px;
+  color: #666666; 
+  border-style: solid; 
+  border-width:2px;
+  padding-right: 4px;
+  padding-left: 4px;
+  clear: both;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

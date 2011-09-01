@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Task:</b>
+  <%= @list.Task %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @list.Comments %>
+</p>
+
+<p>
+  <b>Date added:</b>
+  <%= @list.Date_added %>
+</p>
+
+<p>
+  <b>Finish by:</b>
+  <%= @list.Finish_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>

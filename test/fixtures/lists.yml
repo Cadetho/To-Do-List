@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Task: MyString
+  Comments: MyText
+  Date_added: 2011-09-01 01:34:58
+  Finish_by: 2011-09-01 01:34:58
+
+two:
+  Task: MyString
+  Comments: MyText
+  Date_added: 2011-09-01 01:34:58
+  Finish_by: 2011-09-01 01:34:58

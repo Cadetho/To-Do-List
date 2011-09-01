@@ -1,0 +1,22 @@
+
+
+<table>
+  <tr>
+    <th>Task</th>
+    <th>Date added</th>
+    <th>Finish by</th>
+  </tr>
+
+<% @lists.each do |list| %>
+  <tr>
+    <td><%= link_to list.Task, list %></td>
+    <td><%= list.Date_added %></td>
+    <td><%= list.Finish_by %></td>
+    <td><%= link_to 'Delete', list, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Task', new_list_path %>

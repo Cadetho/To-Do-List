@@ -6,7 +6,7 @@ def create
   user = User.authenticate(params[:email], params[:password])
   if user
     session[:user_id] = user.id
-    redirect_to lists_path, :notice => "Logged in!"
+    redirect_to tasks_path, :notice => "Logged in!"
   else
     flash.now.alert = "Invalid email or password"
     render "new"
@@ -15,6 +15,6 @@ end
 
 def destroy
   session[:user_id] = nil
-  redirect_to lists_path, :notice => "Logged out!"
+  redirect_to tasks_path, :notice => "Logged out!"
 end
 end

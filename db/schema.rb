@@ -10,16 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110901130751) do
+ActiveRecord::Schema.define(:version => 20110901094940) do
 
-  create_table "lists", :force => true do |t|
-    t.string   "Task"
-    t.text     "Comments"
-    t.datetime "Date_added"
-    t.datetime "Finish_by"
+  create_table "tasks", :force => true do |t|
+    t.string   "task"
+    t.text     "comments"
+    t.datetime "date_added"
+    t.datetime "finish_by"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|

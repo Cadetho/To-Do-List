@@ -3,7 +3,7 @@ Todolist::Application.routes.draw do
 
   get "users/new"
 
-  resources :lists
+  resources :tasks
   
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "log_in" => "sessions#new", :as => "log_in"

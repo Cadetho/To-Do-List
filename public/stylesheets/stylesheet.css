@@ -1,36 +1,49 @@
-body { background-color: #fff; color: #333; }
+body { background-color: #E2E3DF; color: #333; }
 
 body, p, ol, ul, td {
 	font-family: verdana, arial, helvetica, sans-serif;
 	font-size:   13px;
 	line-height: 18px;
-	background: #FFFFE1;
+	background: #E2E3DF;
+	margin:0px;
 }
 #login_menu{
+  height:36px;
 }
 #login_menu a{
- height:30px;
  padding-top:5px;
  padding-bottom:5px; 
  padding-right:20px;
  padding-left:20px;
  display: block;
  width:auto;
+ text-decoration:none;
+ height:30px;
+ 
 }
 
 #login_menu a:hover{
   background-color:#FFCC99;
+}
+#login_menu p{
+  height:30px;
+  padding:6px;
 }
 ul{
 	list-style-type:none;
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	background:white;
 	height: 30px;
-	border-left-style: solid;
-	border-right-style: solid;
-	overflow:hidden;
+  border-style:solid;
+	overflow:hidden;  
+	background:#E2E3DF;
+}
+#container{
+  width:80%;
+  clear:right;
+  margin:0 auto;
+  float:left;
 }
 li{ 
  
@@ -40,11 +53,20 @@ li{
  height:30px;
 }
 h1 {
-	background-color: #6495ed;
+	background-color: #2E3233;
 	border-width:5px;
-	border-bottom-style:groove;
 	padding: 10px;
 	margin: 0px;
+	color:white;
+}
+h2 {
+  
+}
+#vert_menu{
+  background-color:white;
+  width:20%;
+  float:right;
+  height:600px;
 }
 td {
 	padding: 5px;
@@ -53,7 +75,7 @@ th {
 	border-style: solid;
 	border-width: 2px;
 	margin: 10px;
-	background-color: #FFFFCC;
+	background-color: white;
 }
 tr{
 	padding: 4px;
@@ -75,9 +97,6 @@ a:visited {
 a:hover { 
 	color: #white;  
 	
-}
-#wrapper{
-  color:white;
 }
 div.field, div.actions {
 	margin-bottom: 10px;

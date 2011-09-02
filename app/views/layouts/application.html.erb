@@ -3,16 +3,15 @@
 <h1>To Do List</h1>
 <div id="login_menu">
 <div id="user_nav">
-  <% if current_user %>
   <ul>
+    <li style="float:left;border-right-style:solid"><%=link_to "Home", tasks_path %></li>
+  <% if current_user %>
    <li> <%= link_to "Log out", log_out_path %></li>
-    <p style=" float:right; background-color:white;">Logged in as <%= current_user.email %>.</p>
-  </ul>
+    <p style=" float:right; background-color:#E2E3DF;">Logged in as <%= current_user.email %></p>
 
   <% else %>
-  <ul>
    <li><%= link_to "Register", sign_up_path %></li>
-   <li><%= link_to "log in", log_in_path %></li>
+   <li><%= link_to "Log in", log_in_path %></li>
   </ul>
   <% end %>
 </div>
@@ -27,8 +26,10 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
+<div id="container">
 <%= yield %>
-
+</div>
+<div id="vert_menu">
+  </div>
 </body>
 </html>

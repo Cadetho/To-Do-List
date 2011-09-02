@@ -1,0 +1,26 @@
+<% if current_user %>
+<table>
+  <tr>
+    <th>Task</th>
+    <th>Date added</th>
+    <th>Finish by</th>
+  </tr> 
+  
+<% @tasks.each do |task| %>
+  <% if task .user_id==current_user.id %>
+  <tr>
+    <td><%= link_to task.task, task %></td>
+    <td><%= task.date_added %></td>
+    <td><%= task.finish_by %></td>
+    <td><%= link_to 'Delete', task, :confirm => 'Are you sure?', :method => :delete %></td>
+    
+  </tr>
+  <% else %>
+  <% end %>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Task', new_task_path %>
+<%end%>

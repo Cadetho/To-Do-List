@@ -2,7 +2,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.xml
   def index
-    @tasks = Task.all
+    @tasks = current_user.tasks.order("finish_by, date_added")
 
     respond_to do |format|
       format.html # index.html.erb
